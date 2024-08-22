@@ -1,0 +1,26 @@
+<html>  
+<head>  
+<title>dropdown menu using select tab</title>  
+</head>  
+<script>  
+function favTutorial() {  
+var mylist = document.getElementById("myList");  
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+}  
+</script>  
+ 
+<body>  
+<form>  
+<b> Select you site using dropdown list </b>  
+<select id = "myList" onchange = "favTutorial()" >  
+<option> ---Choose site--- </option>  
+<option> Google </option>  
+<option> Yahoo </option>  
+<option> Google map </option>  
+</select>  
+<p> Your selected  site is:  
+
+<input type="button" id = "favourite" size = "250" class="button_active" onclick="location.href='https://www.google.com';&quot; />
+</form>  
+</body>  
+</html>
